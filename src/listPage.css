@@ -1,0 +1,89 @@
+body{
+    padding: 50px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.appOuter{
+    display: flex;
+    justify-content: center;
+}
+.filter{
+    min-width:fit-content;
+}
+.filter>label>input{
+    margin-bottom: 10px;
+}
+.productList{
+    width: 90%;
+}
+.productCard{
+    display: inline-block;
+    width:25%;
+    overflow: hidden;
+    margin: 30px;
+    border: 1px solid black;
+    text-align: center;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card-img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle;
+}
+.card-body{
+    overflow: hidden;
+    width: 100%;
+}
+.card-title{
+    font-size: 1.25rem;
+    color: #7c7cff;
+    font-weight: 300;
+    margin-top: 15px;
+}
+.card-desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 15px;
+}
+.card-price{
+    font-size: 1.3rem;
+    color: rgb(7, 192, 7);
+    margin-top: 15px;
+    text-align: left !important;
+}
+.pagination {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .pagination li {
+    display: inline;
+    cursor: pointer;
+    border: 1px solid rgb(198, 198, 198);
+    padding: 5px 10px;
+  }
+  
+  .pagination li.active {
+    font-weight: bold;
+    color: white;
+    background: #0d6efd;
+  }
+@media (max-width:1000px) {
+    .appOuter{
+        flex-direction: column;
+    }
+    .productCard{
+        display: block;
+        width: 70%;
+    }
+}
